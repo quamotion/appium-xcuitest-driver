@@ -13,7 +13,7 @@ import { translateDeviceName } from '../../../lib/utils';
 
 let WebDriverAgent;
 if (!process.env.CLOUD) {
-  WebDriverAgent = require('../../../lib/wda/webDriverAgent').WebDriverAgent;
+  WebDriverAgent = require('appium-webdriveragent').WebDriverAgent;
 }
 
 const SIM_DEVICE_NAME = 'webDriverAgentTest';

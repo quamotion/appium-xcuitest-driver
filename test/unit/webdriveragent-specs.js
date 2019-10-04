@@ -1,4 +1,4 @@
-import { WebDriverAgent, BOOTSTRAP_PATH } from '../../lib/wda/webdriveragent';
+import { WebDriverAgent, BOOTSTRAP_PATH } from 'appium-webdriveragent';
 import * as utils from '../../lib/wda/utils';
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';

@@ -1,4 +1,4 @@
-import { WebDriverAgent } from '../../../lib/wda/webdriveragent';
+import { WebDriverAgent } from 'appium-webdriveragent';
 import chai from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import { withMocks } from 'appium-test-support';

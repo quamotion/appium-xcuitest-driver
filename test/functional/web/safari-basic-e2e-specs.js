@@ -29,11 +29,11 @@ describe('Safari - basics -', function () {
       await deleteSession();
     });
 
-    it('should start a session with default init', async function () {
+    it.only('should start a session with default init', async function () {
       const expectedTitle = process.env.REAL_DEVICE
         ? 'Appium: Mobile App Automation Made Awesome.'
         : 'Appium/welcome';
-      driver = await initSession(SAFARI_CAPS);
+      driver = await initSession(DEFAULT_CAPS);
       const title = await spinTitle(driver);
       title.should.equal(expectedTitle);
     });
