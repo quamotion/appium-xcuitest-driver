@@ -57,8 +57,8 @@ if (REAL_DEVICE) {
   if (CLOUD) {
     apps.testAppId = 1;
   } else {
-    apps.iosTestApp = "~/TestApp.ipa";
-    apps.uiCatalogApp = "~/UICatalog.ipa";
+    apps.iosTestApp = process.env.TESTAPPPATH;
+    apps.uiCatalogApp = process.env.UICATALOGAPPPATH;
   }
 } else {
   if (CLOUD) {
