@@ -66,8 +66,8 @@ if (REAL_DEVICE) {
     apps.uiCatalogApp = 'http://appium.github.io/appium/assets/UICatalog9.4.app.zip';
     apps.touchIdApp = null; // TODO: Upload this to appium.io
   } else {
-    apps.iosTestApp = testAppPath.iphonesimulator;
-    apps.uiCatalogApp = uiCatalogPath.iphonesimulator;
+    apps.iosTestApp = process.env.TESTAPPPATH;
+    apps.uiCatalogApp = process.env.UICATALOGAPPPATH;
     apps.touchIdApp = path.resolve('.', 'test', 'assets', 'TouchIDExample.app');
   }
 }
