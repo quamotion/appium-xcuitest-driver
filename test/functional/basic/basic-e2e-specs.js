@@ -317,7 +317,7 @@ describe('XCUITestDriver - basics -', function () {
 
       await retryInterval(100, 1000, async function () {
         let title = await driver.title();
-        title.should.equal('I am a page title');
+        title.should.include('I am a page title');
       });
 
       await driver.context(contexts[0]);
